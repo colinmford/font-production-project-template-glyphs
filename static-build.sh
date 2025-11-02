@@ -56,9 +56,9 @@ rm -rf "$ttfDir"
 mkdir -p "$ttfDir"
 
 # making the ttfs from the glyphs file
-find "$sourcesDir" -path '**/*.glyphs' -print0 | while read -d $'\0' dsFile
+find "$sourcesDir" -path '**/*.glyphs' -print0 | while read -d $'\0' glyphsFile
 do
-    fontmake --glyphs-path "$dsFile" --output ttf --interpolate --output-dir "$ttfDir" --production-names --overlaps-backend pathops --flatten-components -a "--no-info --stem-width-mode=nnn"
+    fontmake --glyphs-path "$glyphsFile" --output ttf --interpolate --output-dir "$ttfDir" --production-names --overlaps-backend pathops --flatten-components -a "--no-info --stem-width-mode=nnn"
 done
 
 # -----------------------------------------------------------------------
