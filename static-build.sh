@@ -55,10 +55,10 @@ rm -rf "$ttfDir"
 # making the ttf directory
 mkdir -p "$ttfDir"
 
-# making the ttfs from the designspace file
-find "$sourcesDir" -path '**/*.designspace' -print0 | while read -d $'\0' dsFile
+# making the ttfs from the glyphs file
+find "$sourcesDir" -path '**/*.glyphs' -print0 | while read -d $'\0' dsFile
 do
-    fontmake --mm-designspace "$dsFile" --output ttf --interpolate --output-dir "$ttfDir" --production-names --overlaps-backend pathops --flatten-components -a "--no-info --stem-width-mode=nnn"
+    fontmake --glyphs-path "$dsFile" --output ttf --interpolate --output-dir "$ttfDir" --production-names --overlaps-backend pathops --flatten-components -a "--no-info --stem-width-mode=nnn"
 done
 
 # -----------------------------------------------------------------------

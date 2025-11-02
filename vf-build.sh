@@ -25,7 +25,7 @@ rm -rf "$ttfDir"
 # making the ttf directory
 mkdir -p "$ttfDir"
 
-# making the ttfs from the designspace file
+# making the ttfs from the Glyphs file
 find "$sourcesDir" -path '**/*.glyphs' -print0 | while read -d $'\0' glyphsFile
 do
     fileBaseName=${glyphsFile##*/}
