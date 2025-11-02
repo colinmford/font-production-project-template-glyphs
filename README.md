@@ -1,7 +1,7 @@
 # Font Production Project Template (For Glyphs)
 Replace this Readme with info about your project!
 
-Note: This template is for Glyphs. As of Oct 2021, Glyphs 3 support is still currently in progress (see [GlyphsLib](https://github.com/googlefonts/glyphsLib)), so use caution.
+Note: This template is for Glyphs. GlyphsLib is an unofficial tool to generate Glyphs files outside of GlyphsApp (see [GlyphsLib](https://github.com/googlefonts/glyphsLib)). It might not cover all use cases, so use caution.
 
 ## Commands
 ### Starting a local development environment
