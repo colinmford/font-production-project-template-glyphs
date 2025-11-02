@@ -1,7 +1,12 @@
 {
-.appVersion = "1352";
+.appVersion = "3436";
 DisplayStrings = (
-O
+O,
+"Á",
+"ÁÄ",
+A,
+"´",
+"¨"
 );
 classes = (
 {
@@ -11,21 +16,6 @@ name = testGroup;
 );
 copyright = "License same as MutatorMath. BSD 3-clause. [test-token: C]";
 customParameters = (
-{
-name = Axes;
-value = (
-{
-Default = 80;
-Name = width;
-Tag = wdth;
-},
-{
-Default = 300;
-Name = weight;
-Tag = wght;
-}
-);
-},
 {
 name = glyphOrder;
 value = (
@@ -80,6 +70,22 @@ IJ
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
+name = "Disable Last Change";
+value = 1;
+},
+{
+name = "Enforce Compatibility Check";
+value = 1;
+},
+{
+name = "Use Line Breaks";
+value = 1;
+},
+{
 name = license;
 value = "License same as MutatorMath. BSD 3-clause. [test-token: C]";
 },
@@ -88,16 +94,19 @@ name = vendorID;
 value = LTTR;
 },
 {
-name = year;
-value = 2004;
+name = Axes;
+value = (
+{
+Default = 80;
+Name = width;
+Tag = wdth;
 },
 {
-name = "Don't use Production Names";
-value = 1;
-},
-{
-name = "Use Typo Metrics";
-value = 1;
+Default = 300;
+Name = weight;
+Tag = wght;
+}
+);
 }
 );
 date = "2021-07-16 14:24:50 +0000";
@@ -105,7 +114,8 @@ disablesNiceNames = 1;
 familyName = MutatorMathTest;
 featurePrefixes = (
 {
-code = "# this is the feature from lightCondensed\012# Hi_this_is_the_feature.";
+code = "# this is the feature from lightCondensed
+# Hi_this_is_the_feature.";
 name = Prefix;
 }
 );
@@ -159,6 +169,7 @@ descender = -200;
 horizontalStems = (
 36
 );
+iconName = Light_Condensed;
 id = master01;
 name = "Condensed Light";
 verticalStems = (
@@ -173,6 +184,8 @@ xHeight = 500;
 {
 alignmentZones = (
 "{800, 10}",
+"{800, 10}",
+"{0, -10}",
 "{0, -10}"
 );
 ascender = 800;
@@ -220,6 +233,7 @@ descender = -200;
 horizontalStems = (
 264
 );
+iconName = Bold;
 id = master02;
 name = "Wide Bold";
 verticalStems = (
@@ -233,6 +247,8 @@ xHeight = 500;
 {
 alignmentZones = (
 "{800, 10}",
+"{800, 10}",
+"{0, -10}",
 "{0, -10}"
 );
 ascender = 800;
@@ -279,6 +295,7 @@ descender = -200;
 horizontalStems = (
 264
 );
+iconName = Bold_Condensed;
 id = master03;
 name = "Condensed Bold";
 verticalStems = (
@@ -340,6 +357,7 @@ descender = -200;
 horizontalStems = (
 36
 );
+iconName = Light;
 id = master04;
 name = "Wide Light";
 verticalStems = (
@@ -356,6 +374,12 @@ glyphs = (
 glyphname = A;
 layers = (
 {
+anchors = (
+{
+name = top;
+position = "{196, 700}";
+}
+);
 layerId = master01;
 paths = (
 {
@@ -461,6 +485,12 @@ com.typemytype.robofont.Image.Sharpness = 0.4;
 width = 930;
 },
 {
+anchors = (
+{
+name = top;
+position = "{620, 800}";
+}
+);
 layerId = master02;
 paths = (
 {
@@ -547,6 +577,12 @@ nodes = (
 width = 1290;
 },
 {
+anchors = (
+{
+name = top;
+position = "{334, 800}";
+}
+);
 layerId = master03;
 paths = (
 {
@@ -645,6 +681,12 @@ com.typemytype.robofont.Image.Sharpness = 0.4;
 width = 740;
 },
 {
+anchors = (
+{
+name = top;
+position = "{593, 700}";
+}
+);
 layerId = master04;
 paths = (
 {
@@ -758,7 +800,7 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 99, 20}";
+transform = "{1, 0, 0, 1, 128, 0}";
 }
 );
 layerId = master01;
@@ -772,12 +814,12 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 99, 20}";
+transform = "{1, 0, 0, 1, 396, 0}";
 }
 );
 layerId = "42E0DF1B-4E57-4C29-98B9-A0E8E79B8CD2";
 name = foreground;
-width = 396;
+width = 646;
 },
 {
 components = (
@@ -786,7 +828,7 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 484, 20}";
+transform = "{1, 0, 0, 1, 458, 0}";
 }
 );
 layerId = master02;
@@ -800,12 +842,12 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 484, 20}";
+transform = "{1, 0, 0, 1, 1290, 0}";
 }
 );
 layerId = "FEFA1F89-01AA-4044-B07D-C237CB1D2238";
 name = foreground;
-width = 1290;
+width = 1680;
 },
 {
 components = (
@@ -814,7 +856,7 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 204, 0}";
+transform = "{1, 0, 0, 1, 196, 0}";
 }
 );
 layerId = master03;
@@ -828,12 +870,12 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 204, 0}";
+transform = "{1, 0, 0, 1, 740, 0}";
 }
 );
 layerId = "73FD8451-E428-448D-8D1D-D5CC57E59DFE";
 name = foreground;
-width = 740;
+width = 1050;
 },
 {
 components = (
@@ -842,7 +884,7 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 494, 20}";
+transform = "{1, 0, 0, 1, 471, 0}";
 }
 );
 layerId = master04;
@@ -856,12 +898,12 @@ name = A;
 },
 {
 name = acute;
-transform = "{1, 0, 0, 1, 494, 20}";
+transform = "{1, 0, 0, 1, 1190, 0}";
 }
 );
 layerId = "093B6E6A-801E-4F69-AADB-4D00A561BD17";
 name = foreground;
-width = 1190;
+width = 1440;
 }
 );
 unicode = "00C1,00E1";
@@ -869,7 +911,6 @@ unicode = "00C1,00E1";
 {
 color = (167,176,255,255);
 glyphname = Adieresis;
-lastChange = "2021-07-16 14:16:45 +0000";
 layers = (
 {
 components = (
@@ -878,7 +919,7 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 89, 20}";
+transform = "{1, 0, 0, 1, 84, 0}";
 }
 );
 layerId = master01;
@@ -892,7 +933,7 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 89, 20}";
+transform = "{1, 0, 0, 1, 84, 0}";
 }
 );
 layerId = "16C8EF77-A440-4CA3-AB70-41487EF19D99";
@@ -906,7 +947,7 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 362, 20}";
+transform = "{1, 0, 0, 1, 337, 0}";
 }
 );
 layerId = master02;
@@ -920,12 +961,12 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 362, 20}";
+transform = "{1, 0, 0, 1, 1290, 0}";
 }
 );
 layerId = "B5FCAA55-E49C-41B9-B93A-FB1DB55F5BBC";
 name = foreground;
-width = 1290;
+width = 1850;
 },
 {
 components = (
@@ -934,11 +975,11 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 120, 0}";
+transform = "{1, 0, 0, 1, 73, 0}";
 }
 );
 layerId = master03;
-width = 760;
+width = 740;
 },
 {
 associatedMasterId = master03;
@@ -948,12 +989,12 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 120, 0}";
+transform = "{1, 0, 0, 1, 740, 0}";
 }
 );
 layerId = "8DCF4FFC-EACC-4E56-9C21-ED81348B9D9A";
 name = foreground;
-width = 760;
+width = 1260;
 },
 {
 components = (
@@ -962,7 +1003,7 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 421, 20}";
+transform = "{1, 0, 0, 1, 419, 0}";
 }
 );
 layerId = master04;
@@ -976,12 +1017,12 @@ name = A;
 },
 {
 name = dieresis;
-transform = "{1, 0, 0, 1, 421, 20}";
+transform = "{1, 0, 0, 1, 1190, 0}";
 }
 );
 layerId = "BE09BF57-73D8-4E80-8788-5F832A5818D8";
 name = foreground;
-width = 1190;
+width = 1535;
 }
 );
 unicode = "00C4,00E4";
@@ -12344,7 +12385,6 @@ unicode = 2193;
 },
 {
 glyphname = dot;
-lastChange = "2021-07-16 14:36:35 +0000";
 layers = (
 {
 layerId = master01;
@@ -12482,6 +12522,12 @@ color = (167,176,255,255);
 glyphname = dieresis;
 layers = (
 {
+anchors = (
+{
+name = _top;
+position = "{112, 700}";
+}
+);
 components = (
 {
 name = dot;
@@ -12512,6 +12558,12 @@ name = foreground;
 width = 250;
 },
 {
+anchors = (
+{
+name = _top;
+position = "{283, 800}";
+}
+);
 components = (
 {
 name = dot;
@@ -12542,6 +12594,12 @@ name = foreground;
 width = 560;
 },
 {
+anchors = (
+{
+name = _top;
+position = "{261, 800}";
+}
+);
 components = (
 {
 name = dot;
@@ -12572,6 +12630,12 @@ name = foreground;
 width = 520;
 },
 {
+anchors = (
+{
+name = _top;
+position = "{174, 700}";
+}
+);
 components = (
 {
 name = dot;
@@ -12608,6 +12672,12 @@ unicode = 00A8;
 glyphname = acute;
 layers = (
 {
+anchors = (
+{
+name = _top;
+position = "{68, 700}";
+}
+);
 layerId = master01;
 paths = (
 {
@@ -12640,6 +12710,12 @@ nodes = (
 width = 250;
 },
 {
+anchors = (
+{
+name = _top;
+position = "{195, 800}";
+}
+);
 layerId = master02;
 paths = (
 {
@@ -12672,6 +12748,12 @@ nodes = (
 width = 390;
 },
 {
+anchors = (
+{
+name = _top;
+position = "{153, 800}";
+}
+);
 layerId = master03;
 paths = (
 {
@@ -12704,6 +12786,12 @@ nodes = (
 width = 310;
 },
 {
+anchors = (
+{
+name = _top;
+position = "{66, 700}";
+}
+);
 layerId = master04;
 paths = (
 {
